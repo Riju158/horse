@@ -1,0 +1,714 @@
+:root {
+    --primary-color: #c5a481;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    max-width: 1440px;
+    width: 90%;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.jc {
+    justify-content: space-between;
+}
+
+/* ------------banner------------- */
+.bannerimg {
+    position: relative;
+}
+
+.bannermain {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.logo_part {
+    width: 102px;
+    position: absolute;
+    top: 1%;
+    left: 2%;
+}
+
+hr {
+    border: 1px solid #d5a269;
+}
+
+.link {
+    color: white;
+}
+
+.logoimg {
+    width: 100%;
+}
+
+.login_part {
+    width: 231px;
+    height: 169px;
+    background-color: rgba(12, 16, 36, 1);
+    position: absolute;
+    top: 24px;
+    right: 15px;
+    padding: 20px;
+}
+
+.login_border {
+    text-align: center;
+    border: 1px solid #d5a269;
+    padding: 35px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.active {
+    color: #c5a481;
+}
+
+.bannerText {
+    text-align: center;
+    position: absolute;
+    top: 190px;
+    left: 40px;
+}
+
+.small {
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: #c5a481 0px 4px 4px;
+}
+
+.big {
+    font-size: 90px;
+    font-weight: 600;
+    color: #c5a481;
+}
+
+.bigg {
+    font-size: 120px;
+}
+
+.logoicon_part {
+    justify-content: center;
+    gap: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.logo_left {
+    padding-right: 30px;
+    border-right: 1px solid #d5a269;
+}
+
+.bannerbutton {
+    padding: 15px 7px 18px;
+    background-color: #0c1024;
+    border: 1px solid #c5a481;
+}
+
+.btn {
+    background-color: #0c1024;
+    border: 1px solid #c5a481;
+    padding: 10px 60px;
+    color: white;
+}
+
+.date_part {
+    margin-top: 20px;
+    justify-content: center;
+    color: white;
+    gap: 30px;
+    font-size: 13px;
+}
+
+.place {
+    text-align: start;
+    border-left: 1px solid #d5a269;
+    padding-left: 10px;
+}
+
+/* ---------------navbar------------- */
+
+.navbar .main {
+    padding: 40px 6%;
+}
+
+.navlink {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*
+.banner_heading_character {
+    display: inline-block;
+    font-size: 90px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.banner_heading_character:hover {
+    transform: scale(150%);
+} */
+
+/* ----------------history----------- */
+
+.history {
+    background: url(../imgs/1bg.png);
+    width: 100%;
+    aspect-ratio: 14/7.7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hs_img_container {
+    width: 50%;
+}
+
+.hs_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hs_text_container {
+    flex: 1;
+}
+
+.history_content {
+    align-items: start;
+    gap: 4rem;
+    position: relative;
+}
+
+.hs_heading h4 {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.hs_heading h1 {
+    margin-top: 15px;
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.hs_para {
+    margin-top: 4rem;
+    color: var(--white);
+    font-family: "Lora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 170%;
+    text-align: justify;
+    margin-right: 30%;
+}
+
+.para_highlight {
+    color: var(--primary-color);
+}
+
+.hs_go_back {
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.arrow {
+    width: 6rem;
+    height: 1px;
+    background: var(--primary-color);
+    position: relative;
+}
+
+.arrow::after {
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    background: var(--primary-color);
+    right: 0;
+    top: 0;
+    transform: rotate(45deg);
+    margin-top: -3px;
+}
+
+.para_btn {
+    color: var(--primary-color);
+    font-size: 12px;
+}
+
+.hs_gradient_bg {
+    background: linear-gradient(180deg, rgba(87, 85, 81, 0) 5.21%, rgba(69, 68, 65, 0.7) 48.44%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 10%;
+    transform: translateY(50px);
+}
+
+.hs_img_container,
+.hs_text_container {
+    z-index: 1;
+}
+
+
+
+
+
+/* ---------------legacy------------ */
+
+.legacy {
+    background: url(../imgs/Gradient.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.legacy .main {
+    padding-bottom: 5%;
+}
+
+
+
+.section_heading h4 {
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.top_heading {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.section_heading {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 5%;
+    color: var(--white);
+}
+
+
+.container {
+    margin-top: 5%;
+    align-items: end;
+    gap: 4rem;
+    position: relative;
+    margin-bottom: 10%;
+}
+
+
+.last_container {
+    padding-top: 10%;
+}
+
+
+.legacy_img_container {
+    width: 60%;
+}
+
+.largely_small_img {
+    width: 40%;
+    transform: translateY(100px);
+}
+
+.allimg {
+    width: 100%;
+}
+
+.allText_part {
+    flex: 1;
+}
+
+.year {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.para {
+    color: var(--white);
+    font-family: "Lora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 170%;
+    text-align: justify;
+    margin-right: 30%;
+}
+
+.para_left {
+    margin-right: 0;
+}
+
+.text_part_left {
+    margin-left: 5%;
+}
+
+.read_more {
+    gap: 20px;
+    margin-top: 3%;
+    margin-bottom: 20%;
+}
+
+.all_gradient_bg {
+    background: linear-gradient(180deg, rgba(11, 7, 1, 0.497) 31.33%, rgba(39, 38, 36, 0.644) 76.55%);
+    position: absolute;
+    top: 25%;
+    bottom: 0;
+    left: 10%;
+    right: 0;
+    transform: translateY(50px);
+}
+
+.all_gradient_bg2 {
+    background: linear-gradient(0deg, rgba(11, 7, 1, 0.497) 31.33%, rgba(39, 38, 36, 0.644) 76.55%);
+    position: absolute;
+    top: 25%;
+    bottom: 0;
+    left: 0;
+    right: 10%;
+    transform: translateY(50px);
+}
+
+
+
+
+
+.legacy_img_container,
+.allText_part {
+    z-index: 1;
+}
+
+/* ---------------winning-------------- */
+.winning {
+    background: url(../imgs/winning_bg.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.winning .main {
+    padding-bottom: 10%;
+}
+
+.heading_para {
+    font-size: 16px;
+    margin: 0 10%;
+    line-height: 170%;
+    font-weight: 600;
+}
+
+.winning_content {
+    justify-content: center;
+    gap: 25px;
+    margin-top: 5%;
+}
+
+.horseDiv {
+    position: relative;
+}
+
+
+.horesimg {
+    width: 100%;
+    object-fit: contain;
+}
+
+.horseText {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 60px;
+    bottom: 60px;
+    left: 35px;
+    right: 35px;
+    border: 1px solid #D5A269;
+}
+
+.horseText p {
+    font-size: 12px;
+}
+
+.horseinfo {
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.horseText .btn {
+    background: rgba(0, 3, 12, 0.5);
+}
+
+
+
+/* ----------------shosee-------------------- */
+
+.shose {
+    background: url(../imgs/Gradient2.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 18/8.9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6%;
+    padding-bottom: 3%;
+
+}
+
+.shose_container {
+    align-items: start;
+    gap: 30px;
+    position: relative;
+}
+
+.shosetext {
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 30%;
+}
+
+.shose_heading h4 {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+.shose_heading h2 {
+    color: var(--primary-color);
+    font-size: 30px;
+    font-weight: 500;
+
+}
+
+.shose_para p {
+    color: var(--white);
+    margin-top: 10%;
+    text-align: justify;
+    margin-right: 20%;
+    line-height: 170%;
+    font-size: 15px;
+}
+
+.shoseimg {
+    width: 100%;
+}
+
+.shose_content_box {
+    position: relative;
+    padding: 30px;
+}
+
+.shose_slide_btn {
+    position: absolute;
+    bottom: 18%;
+    right: 0;
+    left: 0;
+    color: var(--white);
+    font-size: 20px;
+}
+
+.shose_box {
+    position: relative;
+}
+
+.shose_detail {
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--white);
+    height: 35px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.mian_box {
+    gap: 20px;
+    justify-content: center;
+}
+
+.shose_gradient_bg {
+    background: linear-gradient(180deg, rgba(11, 7, 1, 0.497) 31.33%, rgba(39, 38, 36, 0.644) 76.55%);
+    position: absolute;
+    top: 0;
+    bottom: 30%;
+    left: 0;
+    right: 55%;
+}
+
+.shosetext,
+.shose_content_box {
+    z-index: 3;
+}
+
+
+/* --------------- NEWS & EVENTS------------- */
+
+
+.news_content {
+    gap: 10px;
+    margin-top: 5%;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+
+.news_box p {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.newsImg {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* -----------------gallery-------------- */
+.gallery {
+    background: url(../imgs/Gradient3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+.gallery_para {
+    margin: 2% 10%;
+    line-height: 150%;
+}
+
+.gallery_content {
+    margin: 5% 0;
+    gap: 10px;
+}
+
+
+
+.galleryimg {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.view {
+    font-family: lora;
+    text-align: center;
+}
+
+
+/* --------------------brand--------------- */
+.brand_logo {
+    background: url(../imgs/Gradient2.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 14/4;
+}
+
+.logo_container {
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.brandImg {
+    object-fit: contain;
+}
+
+
+/* -----------------footer------------- */
+footer {
+    background: url(../imgs/Gradient3.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+footer .main{
+  padding: 5% 0;
+}
+
+.footer_container div{
+    height:150px;
+}
+
+.footer_heading{
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.footer_container a{
+    color: white;
+    display: block;
+    margin-bottom:3%;
+    opacity: 0.8;
+    font-size: 12px;
+}
+
+.footerlast{
+    margin-top: 20px;
+}
+
+.footer_nav a{
+    font-size: 12px;
+    color: white;
+    margin-right:70px;
+}
+
+.companion{
+    font-size: 12px;
+}
+
+.footer_logo img{
+    width: 100px;
+}
